@@ -34,11 +34,11 @@ const userSchema = new Schema(
   }
 );
 
-userSchema
-  .virtual('thoughtCount')
-  .get(function () {
-    return thought.length();
-  });
+// userSchema
+//   .virtual('thoughtCount')
+//   .get(function () {
+//     return thought.length();
+//   });
 
 const User = model('user', userSchema);
 
