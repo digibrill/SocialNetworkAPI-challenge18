@@ -1,9 +1,0 @@
-import { string } from "prop-types"
-
-User {
-    username: string, unique, required,, trimmed
-    email: string, required, unique, validemail
-    thoughts: _id array (ref Thought model)
-    friends: _id array (eref User model)
-    
-}
