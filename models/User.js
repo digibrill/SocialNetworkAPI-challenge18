@@ -3,6 +3,10 @@ const thoughtSchema = require('./Thought');
 
 const userSchema = new Schema(
   {
+    _id:{
+      type: Schema.Types.ObjectId,
+      default: () => new Types.ObjectId(),
+    },
     username: {
       type: String,
       required: true,
