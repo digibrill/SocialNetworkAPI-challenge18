@@ -21,7 +21,7 @@ const thoughts = [
 ];
 
   // Load names
-const loadUsernames = (int) => {
+const loadUserProfiles = (int) => {
   const userResults = [];
   for (let i = 0; i < int; i++) {
     userResults.push({
@@ -43,4 +43,4 @@ const loadThoughts = (int) => {
 };
 
 
-module.exports = { loadUsernames, loadThoughts };
+module.exports = { loadUserProfiles, loadThoughts };

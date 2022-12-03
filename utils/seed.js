@@ -16,8 +16,9 @@ connection.once('open', async () => {
 
   // loading
   for (let i = 0; i < 8; i++) {
-    currUserName = userProfiles[i][0];
-    currUserEmail = userProfiles[i][1];
+    let currUserName = userProfiles[i][0];
+    console.log(currUserName);
+    let currUserEmail = userProfiles[i][1];
     users.push({
       currUserName,
       currUserEmail,
