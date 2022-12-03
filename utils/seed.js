@@ -10,8 +10,8 @@ connection.once('open', async () => {
   await Thought.deleteMany({});
 
   // load thoughts and names and init user array
-  const thoughts = loadThoughts();
-  const userProfiles = loadUserProfiles();
+  const thoughts = loadThoughts(8);
+  const userProfiles = loadUserProfiles(8);
   const users = [];
 
   // loading
@@ -20,8 +20,8 @@ connection.once('open', async () => {
     console.log(currUserName);
     let currUserEmail = userProfiles[i][1];
     users.push({
-      currUserName,
-      currUserEmail,
+      username: currUserName,
+      email: currUserEmail,
     });
   }
 

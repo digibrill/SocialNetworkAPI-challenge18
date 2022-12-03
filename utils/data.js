@@ -35,7 +35,7 @@ const loadUserProfiles = (int) => {
 const loadThoughts = (int) => {
   const thoughtResults = [];
   for (let i = 0; i < int; i++) {
-    userResults.push({
+    thoughtResults.push({
       thoughtTitle: thoughts[i]
     });
   }

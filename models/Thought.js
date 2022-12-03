@@ -31,7 +31,7 @@ const thoughtSchema = new Schema(
   }
 );
 
-// Initialize user model
+// Initialize thought model
 const Thought = model('thought', thoughtSchema);
 
 module.exports = Thought;
